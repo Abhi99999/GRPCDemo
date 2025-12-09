@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "DiscountServer.Protos";
+
+service DiscountProtoService{
+	rpc GetDiscount(DiscountId) returns(DiscountModel);
+	rpc CreateDiscount(DiscountModel) returns(DiscountDtoModel);
+}
+
+message DiscountId{
+	int32 id = 1;
+}
+
+message DiscountDtoModel{
+	string name = 1;
+	string product_id =2;
+	double price = 3;
+}
+
+message DiscountModel{
+	int32 id = 1;
+	string name =2;
+	string product_id =  3;
+	double price = 4;
+}
