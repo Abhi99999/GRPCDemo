@@ -13,4 +13,4 @@ Note: For every RPC defined in your .proto, the C# gRPC client generates Async m
 
 
 
-Note: gRPC converts snake_case to PascalCase.
+Note: gRPC converts snake_case to PascalCase. Make to change property of server and client protobuf
